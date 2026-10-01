@@ -1,0 +1,358 @@
+/* =========================================
+   BISMILLAH MOTORS - NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 78px;
+  background-color: #07224a;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(217, 169, 0, 0.25);
+}
+
+
+/* =========================================
+   NAVBAR CONTAINER
+========================================= */
+
+.navbar-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 125px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transform: translateY(5px);
+}
+
+
+/* =========================================
+   CENTER DESKTOP NAVIGATION
+========================================= */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+  flex: 1;
+  transform: translateX(120px);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+   Contact + Book Appointment
+========================================= */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 40px;
+}
+
+
+/* =========================================
+   INDIVIDUAL NAVIGATION LINKS
+========================================= */
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 28px 0;
+  transition: color 0.3s ease;
+}
+
+
+/* =========================================
+   NAV LINK HOVER
+========================================= */
+
+.nav-link:hover {
+  color: #f5c400;
+}
+
+
+/* =========================================
+   GOLD UNDERLINE
+========================================= */
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  width: 0;
+  height: 2px;
+  background-color: #f5c400;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================
+   BOOK APPOINTMENT BUTTON
+========================================= */
+
+.booking-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 20px;
+  background-color: #d9a900;
+  color: #061b3a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   BOOKING BUTTON HOVER
+========================================= */
+
+.booking-button:hover {
+  background-color: #f5c400;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(217, 169, 0, 0.25);
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* =========================================
+   LAPTOP
+   1024px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .navbar-container {
+    padding: 0;
+  }
+
+  .navbar-logo img {
+    width: 115px;
+  }
+
+  .desktop-nav {
+    gap: 20px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+    padding-right: 25px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .booking-button {
+    padding: 0 16px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   TABLET + MOBILE
+   Below 768px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-container {
+    padding: 0 18px;
+  }
+
+  .navbar-logo img {
+    width: 105px;
+  }
+
+
+  /* Hide desktop navigation */
+
+  .desktop-nav,
+  .navbar-right {
+    display: none;
+  }
+
+
+  /* Show mobile menu icon */
+
+  .mobile-menu-button {
+    display: flex;
+    margin-left: auto;
+  }
+
+
+  /* =======================================
+     MOBILE NAVIGATION
+  ======================================= */
+
+  .mobile-nav {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #061b3a;
+    flex-direction: column;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border-top: 1px solid rgba(217, 169, 0, 0.2);
+
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      padding 0.35s ease;
+  }
+
+
+  /* =======================================
+     OPEN MOBILE MENU
+  ======================================= */
+
+  .mobile-nav-open {
+    max-height: 500px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    opacity: 1;
+  }
+
+
+  /* =======================================
+     MOBILE LINKS
+  ======================================= */
+
+  .mobile-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.3s ease;
+  }
+
+
+  /* =======================================
+     MOBILE LINK HOVER
+  ======================================= */
+
+  .mobile-nav a:hover {
+    color: #f5c400;
+  }
+
+
+  /* =======================================
+     MOBILE BOOKING BUTTON
+  ======================================= */
+
+  .mobile-nav .mobile-booking-button {
+    margin-top: 15px;
+    text-align: center;
+    background-color: #d9a900;
+    color: #061b3a;
+    border-radius: 5px;
+    font-weight: 700;
+    border-bottom: none;
+  }
+
+
+  .mobile-nav .mobile-booking-button:hover {
+    background-color: #f5c400;
+    color: #061b3a;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   Below 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    height: 65px;
+  }
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-logo img {
+    width: 95px;
+  }
+
+  .mobile-nav {
+    top: 65px;
+  }
+}

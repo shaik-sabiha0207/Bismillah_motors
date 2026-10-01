@@ -1,0 +1,1266 @@
+/* =========================================================
+   BISMILLAH MOTORS
+   HOME SERVICES PREVIEW
+   PREMIUM RESPONSIVE VERSION
+========================================================= */
+
+.services-preview-section {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SERVICES CONTAINER
+========================================================= */
+
+.services-preview-container {
+  width: min(100% - 60px, 1440px);
+  margin: 0 auto;
+  padding: 70px 0 60px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SERVICES HEADING
+========================================================= */
+
+.services-preview-heading {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.services-preview-heading h2 {
+  margin: 0;
+
+  color: #07224A;
+
+  font-size: clamp(28px, 2.2vw, 42px);
+  font-weight: 800;
+
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.services-preview-heading p {
+  margin: 9px 0 0;
+
+  color: #777777;
+
+  font-size: clamp(13px, 0.9vw, 16px);
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.services-preview-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-preview-card {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e6eb;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 16px rgba(6, 27, 58, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.service-preview-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #f5c400;
+
+  box-shadow:
+    0 14px 32px rgba(6, 27, 58, 0.14);
+}
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.service-preview-image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background: #07224A;
+}
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.service-preview-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.service-preview-card:hover
+.service-preview-image img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.service-preview-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 27, 58, 0) 52%,
+      rgba(6, 27, 58, 0.16) 100%
+    );
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.service-preview-content {
+  padding: 18px 17px 20px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.service-preview-content h3 {
+  margin: 0;
+
+  color: #07224A;
+
+  font-size: clamp(15px, 1.1vw, 19px);
+
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.15px;
+}
+
+
+/* =========================================================
+   SERVICE DESCRIPTION
+========================================================= */
+
+.service-preview-content p {
+  margin: 7px 0 0;
+
+  color: #707070;
+
+  font-size: clamp(11px, 0.75vw, 14px);
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   VIEW ALL SERVICES BUTTON
+========================================================= */
+
+.services-preview-button-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 38px;
+}
+
+
+.services-preview-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+
+  padding: 0 28px;
+
+  background: #f5c400;
+
+  color: #07224A;
+
+  border: 1px solid #f5c400;
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.services-preview-button:hover {
+  background: #e0ae00;
+
+  border-color: #e0ae00;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(217, 169, 0, 0.25);
+}
+
+
+/* =========================================================
+   =========================================================
+   WHY CHOOSE BISMILLAH MOTORS
+   CLEAN / OPEN / PREMIUM
+   NO OUTER BOX
+========================================================= */
+
+.preview-why-section {
+  width: 100%;
+
+  background: #07224A;
+
+  /*
+    IMPORTANT:
+    No border-top here.
+    The section should flow naturally from
+    the services section.
+  */
+}
+
+
+/* =========================================================
+   WHY CONTAINER
+========================================================= */
+
+.preview-why-container {
+  width: min(100% - 60px, 1440px);
+
+  margin: 0 auto;
+
+  padding: 46px 0 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WHY HEADING
+========================================================= */
+
+.preview-why-container > h2 {
+  margin: 0 0 34px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: clamp(22px, 1.7vw, 30px);
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.4px;
+}
+
+
+/* =========================================================
+   WHY GRID
+   NO BORDER
+   NO BOX
+========================================================= */
+
+.preview-why-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  align-items: center;
+
+  /*
+    IMPORTANT:
+    No border-top.
+    No border-bottom.
+  */
+
+  background: transparent;
+}
+
+
+/* =========================================================
+   WHY ITEM
+========================================================= */
+
+.preview-why-item {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 12px 24px;
+
+  box-sizing: border-box;
+
+  /*
+    ONLY MIDDLE VERTICAL LINE
+  */
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.11);
+
+  transition:
+    background-color 0.3s ease;
+}
+
+
+/* =========================================================
+   REMOVE LAST VERTICAL LINE
+========================================================= */
+
+.preview-why-item:last-child {
+  border-right: none;
+}
+
+
+/* =========================================================
+   WHY ICON
+========================================================= */
+
+.preview-why-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #f5c400;
+
+  background:
+    rgba(245, 196, 0, 0.08);
+
+  border:
+    1px solid rgba(245, 196, 0, 0.32);
+
+  border-radius: 50%;
+
+  font-size: 18px;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   WHY CONTENT
+========================================================= */
+
+/*
+   Your JSX currently uses:
+
+   <div>
+      <strong>...</strong>
+      <span>...</span>
+   </div>
+
+   So this selector works directly.
+*/
+
+.preview-why-item div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   WHY TITLE
+========================================================= */
+
+.preview-why-item div:last-child strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   WHY DESCRIPTION
+========================================================= */
+
+.preview-why-item div:last-child span {
+  display: block;
+
+  color:
+    rgba(255, 255, 255, 0.58);
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 1.3;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   WHY HOVER
+========================================================= */
+
+.preview-why-item:hover {
+  background:
+    rgba(245, 196, 0, 0.025);
+}
+
+
+.preview-why-item:hover
+.preview-why-icon {
+  background: #f5c400;
+
+  color: #07224A;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .services-preview-container {
+    width: min(100% - 100px, 1560px);
+
+    padding-top: 85px;
+    padding-bottom: 75px;
+  }
+
+
+  .services-preview-grid {
+    gap: 22px;
+  }
+
+
+  .service-preview-content {
+    padding: 21px 20px 23px;
+  }
+
+
+  .services-preview-button-wrapper {
+    margin-top: 44px;
+  }
+
+
+  /* WHY */
+
+  .preview-why-container {
+    width: min(100% - 100px, 1560px);
+
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+
+  .preview-why-item {
+    min-height: 78px;
+
+    padding:
+      14px 30px;
+  }
+
+
+  .preview-why-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 19px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 14px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   4K / ULTRA-WIDE
+   2200px+
+========================================================= */
+
+@media (min-width: 2200px) {
+
+  .services-preview-container {
+    width: min(100% - 140px, 1680px);
+
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+
+
+  .services-preview-grid {
+    gap: 26px;
+  }
+
+
+  .service-preview-card {
+    border-radius: 14px;
+  }
+
+
+  .service-preview-content {
+    padding: 24px 23px 27px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 20px;
+  }
+
+
+  .service-preview-content p {
+    font-size: 14px;
+  }
+
+
+  .services-preview-button {
+    min-height: 50px;
+
+    padding: 0 34px;
+
+    font-size: 15px;
+  }
+
+
+  /* WHY */
+
+  .preview-why-container {
+    width: min(100% - 140px, 1680px);
+
+    padding-top: 58px;
+    padding-bottom: 62px;
+  }
+
+
+  .preview-why-item {
+    min-height: 84px;
+
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+
+  .preview-why-icon {
+    width: 46px;
+    height: 46px;
+
+    font-size: 20px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 15px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP / SMALL DESKTOP
+   992px - 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+  .services-preview-container {
+    width: calc(100% - 44px);
+
+    padding: 55px 0 48px;
+  }
+
+
+  .services-preview-grid {
+    gap: 14px;
+  }
+
+
+  .service-preview-content {
+    padding: 15px 14px 17px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 14px;
+  }
+
+
+  .service-preview-content p {
+    font-size: 10px;
+  }
+
+
+  /* WHY */
+
+  .preview-why-container {
+    width: calc(100% - 44px);
+
+    padding: 40px 0 44px;
+  }
+
+
+  .preview-why-item {
+    min-height: 64px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    gap: 10px;
+  }
+
+
+  .preview-why-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 16px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 11px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .services-preview-container {
+    width: calc(100% - 36px);
+
+    padding: 48px 0 42px;
+  }
+
+
+  /* =======================================================
+     SERVICES - 3 CARDS PER ROW
+  ======================================================= */
+
+  .services-preview-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+
+  .service-preview-image {
+    aspect-ratio: 16 / 10;
+  }
+
+
+  .service-preview-content {
+    padding: 14px 13px 16px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 14px;
+  }
+
+
+  .service-preview-content p {
+    font-size: 10px;
+  }
+
+
+  .services-preview-button-wrapper {
+    margin-top: 32px;
+  }
+
+
+  /* =======================================================
+     WHY SECTION - 2 x 2
+  ======================================================= */
+
+  .preview-why-container {
+    width: calc(100% - 36px);
+
+    padding: 40px 0 42px;
+  }
+
+
+  .preview-why-container > h2 {
+    margin-bottom: 28px;
+  }
+
+
+  .preview-why-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .preview-why-item {
+    min-height: 68px;
+
+    padding: 12px 18px;
+  }
+
+
+  /*
+    Remove vertical line
+    from right column
+  */
+
+  .preview-why-item:nth-child(2),
+  .preview-why-item:nth-child(4) {
+    border-right: none;
+  }
+
+
+  /*
+    Only middle horizontal separator.
+    No outer border.
+  */
+
+  .preview-why-item:nth-child(1),
+  .preview-why-item:nth-child(2) {
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.09);
+  }
+
+
+  .preview-why-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 11px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   481px - 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+  .services-preview-container {
+    width: calc(100% - 28px);
+
+    padding: 40px 0 38px;
+  }
+
+
+  .services-preview-heading {
+    margin-bottom: 25px;
+  }
+
+
+  .services-preview-heading h2 {
+    font-size: 25px;
+  }
+
+
+  .services-preview-heading p {
+    margin-top: 7px;
+
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     SERVICES - 2 CARDS PER ROW
+  ======================================================= */
+
+  .services-preview-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 11px;
+  }
+
+
+  .service-preview-card {
+    border-radius: 9px;
+
+    box-shadow:
+      0 3px 12px rgba(6, 27, 58, 0.07);
+  }
+
+
+  .service-preview-image {
+    aspect-ratio: 16 / 10;
+  }
+
+
+  .service-preview-content {
+    padding: 11px 10px 13px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 12px;
+  }
+
+
+  .service-preview-content p {
+    margin-top: 5px;
+
+    font-size: 8.5px;
+
+    line-height: 1.4;
+  }
+
+
+  .services-preview-button-wrapper {
+    margin-top: 27px;
+  }
+
+
+  .services-preview-button {
+    min-height: 40px;
+
+    padding: 0 22px;
+
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     WHY SECTION
+  ======================================================= */
+
+  .preview-why-container {
+    width: calc(100% - 24px);
+
+    padding: 34px 0 36px;
+  }
+
+
+  .preview-why-container > h2 {
+    margin-bottom: 24px;
+
+    font-size: 20px;
+  }
+
+
+  .preview-why-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .preview-why-item {
+    min-height: 64px;
+
+    justify-content: flex-start;
+
+    gap: 9px;
+
+    padding: 10px 12px;
+  }
+
+
+  /*
+    Remove vertical lines
+    from right column
+  */
+
+  .preview-why-item:nth-child(even) {
+    border-right: none;
+  }
+
+
+  /*
+    Only horizontal middle line
+  */
+
+  .preview-why-item:nth-child(1),
+  .preview-why-item:nth-child(2) {
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.08);
+  }
+
+
+  .preview-why-icon {
+    width: 35px;
+    height: 35px;
+
+    font-size: 15px;
+  }
+
+
+  .preview-why-item div:last-child {
+    gap: 3px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 10px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 8px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   0px - 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .services-preview-container {
+    width: calc(100% - 20px);
+
+    padding: 32px 0 31px;
+  }
+
+
+  .services-preview-heading {
+    margin-bottom: 21px;
+  }
+
+
+  .services-preview-heading h2 {
+    font-size: 22px;
+  }
+
+
+  .services-preview-heading p {
+    font-size: 10px;
+  }
+
+
+  .services-preview-grid {
+    gap: 9px;
+  }
+
+
+  .service-preview-card {
+    border-radius: 8px;
+  }
+
+
+  .service-preview-content {
+    padding: 10px 9px 12px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 10.5px;
+  }
+
+
+  .service-preview-content p {
+    font-size: 7.5px;
+
+    line-height: 1.4;
+  }
+
+
+  .services-preview-button-wrapper {
+    margin-top: 24px;
+  }
+
+
+  .services-preview-button {
+    min-height: 38px;
+
+    padding: 0 19px;
+
+    font-size: 10px;
+  }
+
+
+  /* =======================================================
+     WHY
+  ======================================================= */
+
+  .preview-why-container {
+    width: calc(100% - 18px);
+
+    padding: 29px 0 31px;
+  }
+
+
+  .preview-why-container > h2 {
+    margin-bottom: 22px;
+
+    font-size: 17px;
+  }
+
+
+  .preview-why-item {
+    min-height: 60px;
+
+    gap: 8px;
+
+    padding: 9px 8px;
+  }
+
+
+  .preview-why-icon {
+    width: 31px;
+    height: 31px;
+
+    font-size: 13px;
+  }
+
+
+  .preview-why-item div:last-child {
+    gap: 2px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 8.5px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 7px;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   360px and below
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .services-preview-container {
+    width: calc(100% - 16px);
+  }
+
+
+  .services-preview-grid {
+    gap: 7px;
+  }
+
+
+  .service-preview-content {
+    padding: 8px 7px 10px;
+  }
+
+
+  .service-preview-content h3 {
+    font-size: 9.5px;
+  }
+
+
+  .service-preview-content p {
+    font-size: 7px;
+  }
+
+
+  /* =======================================================
+     WHY
+  ======================================================= */
+
+  .preview-why-container {
+    width: calc(100% - 14px);
+  }
+
+
+  .preview-why-item {
+    min-height: 58px;
+
+    gap: 6px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  .preview-why-icon {
+    width: 29px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+
+
+  .preview-why-item div:last-child strong {
+    font-size: 8px;
+  }
+
+
+  .preview-why-item div:last-child span {
+    font-size: 6.5px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .service-preview-card,
+  .service-preview-card img,
+  .services-preview-button,
+  .preview-why-item,
+  .preview-why-icon {
+    transition: none;
+  }
+}
+
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+========================================================= */
+
+.service-preview-card:focus-visible,
+.services-preview-button:focus-visible {
+  outline: 2px solid #f5c400;
+
+  outline-offset: 3px;
+}
